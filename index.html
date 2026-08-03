@@ -36,6 +36,31 @@ padding:0;
 box-sizing:border-box;
 }
 
+<script>
+
+function setLanguage(lang){
+
+if(lang=="fa"){
+document.documentElement.lang="fa";
+document.body.style.direction="rtl";
+
+alert("نسخه فارسی در حال آماده‌سازی است");
+
+}
+
+else{
+
+document.documentElement.lang="en";
+document.body.style.direction="ltr";
+
+alert("English version selected");
+
+}
+
+}
+
+</script>
+  
 body{
 font-family:Arial, Helvetica, sans-serif;
 background:#f4f6f9;
