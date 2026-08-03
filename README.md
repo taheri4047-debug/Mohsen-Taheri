@@ -1,4 +1,4 @@
-# 👋 سلام، من محسن طاهری هستم
+# 👋 محسن طاهری هستم
 
 ## Senior Civil Engineer | Project Supervisor
 
