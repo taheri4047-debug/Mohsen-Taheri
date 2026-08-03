@@ -9,10 +9,33 @@
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f6f9;
+color:#333;
+line-height:1.8;
+}
+
+header{
+background:linear-gradient(135deg,#003366,#006699);
+color:white;
+position:relative;
+min-height:280px;
+padding:70px 20px;
+text-align:center;
+}
+
+/* Language Buttons */
 .language-switch{
 position:absolute;
 top:20px;
-left:30px;
+left:25px;
 }
 
 .language-switch button{
@@ -26,61 +49,6 @@ cursor:pointer;
 font-size:14px;
 }
 
-.language-switch button:hover{
-background:#ddd;
-}
-  
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-<script>
-
-function setLanguage(lang){
-
-if(lang=="fa"){
-document.documentElement.lang="fa";
-document.body.style.direction="rtl";
-
-alert("نسخه فارسی در حال آماده‌سازی است");
-
-}
-
-else{
-
-document.documentElement.lang="en";
-document.body.style.direction="ltr";
-
-alert("English version selected");
-
-}
-
-}
-
-</script>
-  
-body{
-font-family:Arial, Helvetica, sans-serif;
-background:#f4f6f9;
-color:#333;
-line-height:1.8;
-}
-
-<div class="language-switch">
-<button onclick="setLanguage('en')">English</button>
-<button onclick="setLanguage('fa')">فارسی</button>
-</div>
-  
-header{
-background:linear-gradient(135deg,#003366,#006699);
-color:white;
-position:relative;
-min-height:280px;
-padding:70px 20px;
-text-align:center;
-}
 
 .header-text{
 width:100%;
@@ -98,20 +66,20 @@ margin-top:10px;
 
 .header-photo{
 position:absolute;
-right:40px;
-top:20px;
+right:50px;
+top:25px;
 }
 
 .header-photo img{
 width:240px;
 height:240px;
-border-radius:40%;
+border-radius:50%;
 object-fit:contain;
 background:white;
 border:5px solid white;
 padding:5px;
 }
-}
+
 
 .container{
 width:90%;
@@ -181,7 +149,7 @@ padding:25px;
 @media(max-width:768px){
 
 header{
-min-height:420px;
+min-height:450px;
 }
 
 header h1{
@@ -206,6 +174,7 @@ height:180px;
 
 }
 
+
 </style>
 
 </head>
@@ -215,6 +184,12 @@ height:180px;
 
 
 <header>
+
+<div class="language-switch">
+<button onclick="alert('English version')">English</button>
+<button onclick="alert('Persian version coming soon')">فارسی</button>
+</div>
+
 
 <div class="header-photo">
 <img src="pic.jpg" alt="Mohsen Taheri">
@@ -230,7 +205,6 @@ height:180px;
 </div>
 
 </header>
-
 
 
 <div class="container">
@@ -249,7 +223,6 @@ Experienced in construction supervision, technical office activities, quantity s
 </div>
 
 
-
 <div class="card">
 
 <h3>Professional Experience</h3>
@@ -258,61 +231,38 @@ Experienced in construction supervision, technical office activities, quantity s
 
 
 <div class="job">
-
 <h4>Kerman–Sirjan Railway Project</h4>
-
 <p><b>Senior Site Supervisor</b></p>
-
 <p>2021 - Present</p>
-
 <p>
 Supervision of railway infrastructure works including bridges, culverts, earthworks and special structures.
 </p>
-
 </div>
 
 
-
 <div class="job">
-
 <h4>Chabahar International Airport</h4>
-
 <p><b>Senior Site Supervisor</b></p>
-
 <p>2020 - 2021</p>
-
 </div>
 
 
-
 <div class="job">
-
 <h4>Shahroud International Airport</h4>
-
 <p><b>Senior Site Supervisor</b></p>
-
 <p>2018 - 2020</p>
-
 </div>
-
 
 
 <div class="job">
-
 <h4>Khorramabad Airport</h4>
-
 <p><b>Senior Site Supervisor</b></p>
-
 <p>2014 - 2018</p>
-
 </div>
 
 
 </div>
-
 </div>
-
-
 
 
 <div class="card">
@@ -320,17 +270,11 @@ Supervision of railway infrastructure works including bridges, culverts, earthwo
 <h3>Education</h3>
 
 <ul>
-
 <li>M.Sc. Structural Engineering</li>
-
 <li>B.Sc. Civil Engineering</li>
-
 </ul>
 
 </div>
-
-
-
 
 
 <div class="card">
@@ -340,29 +284,18 @@ Supervision of railway infrastructure works including bridges, culverts, earthwo
 <div class="skills">
 
 <div class="skill">Project Management</div>
-
 <div class="skill">Railway Engineering</div>
-
 <div class="skill">Airport Engineering</div>
-
 <div class="skill">Bridge Construction</div>
-
 <div class="skill">Quantity Survey</div>
-
 <div class="skill">AutoCAD</div>
-
 <div class="skill">Microsoft Excel</div>
-
 <div class="skill">Technical Office</div>
-
 <div class="skill">Construction Supervision</div>
 
 </div>
 
 </div>
-
-
-
 
 
 <div class="card">
@@ -371,31 +304,16 @@ Supervision of railway infrastructure works including bridges, culverts, earthwo
 
 <p><b>Name:</b> Mohsen Taheri</p>
 
-<p>
-<b>Email:</b>
-<a href="mailto:taheri4047@gmail.com">
-taheri4047@gmail.com
-</a>
-</p>
+<p><b>Email:</b> taheri4047@gmail.com</p>
 
-
-<p>
-<b>Mobile:</b>
-<a href="tel:+989123324047">
-+98 912 332 4047
-</a>
-</p>
-
+<p><b>Mobile:</b> +98 912 332 4047</p>
 
 <p><b>Country:</b> Iran</p>
 
-
 </div>
 
 
-
 </div>
-
 
 
 <footer>
@@ -406,5 +324,4 @@ taheri4047@gmail.com
 
 
 </body>
-
 </html>
