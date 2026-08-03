@@ -25,8 +25,14 @@ line-height:1.8;
 header{
 background:linear-gradient(135deg,#003366,#006699);
 color:white;
+position:relative;
+min-height:260px;
+padding:50px 20px;
 text-align:center;
-padding:70px 20px;
+}
+
+.header-text{
+width:100%;
 }
 
 header h1{
@@ -37,6 +43,19 @@ header h2{
 font-size:22px;
 font-weight:normal;
 margin-top:10px;
+}
+
+.header-photo{
+position:absolute;
+right:40px;
+top:40px;
+}
+
+.header-photo img{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
 }
 
 .container{
@@ -103,7 +122,6 @@ text-align:center;
 padding:25px;
 }
 
-
 @media(max-width:768px){
 
 header h1{
@@ -114,78 +132,46 @@ header h2{
 font-size:18px;
 }
 
+.header-photo{
+position:relative;
+right:auto;
+top:auto;
+margin-bottom:20px;
+}
+
 }
 
 </style>
 
 </head>
 
-
 <body>
 
 
-<header class="header">
-    <div class="header-text">
-        <h1>محسن طاهری</h1>
-        <h2>مهندس عمران - مدیر پروژه و سرناظر</h2>
-        <p>
-            کارشناسی مهندسی عمران - دانشگاه آزاد شاهرود (1377)<br>
-            کارشناسی ارشد مهندسی سازه - دانشگاه آزاد ابرکوه (1393)
-        </p>
-    </div>
+<header>
 
-    <div class="header-photo">
-        <img src="pic.jpg" alt="Mohsen Taheri">
-    </div>
+<div class="header-photo">
+<img src="pic.jpg" alt="Mohsen Taheri">
+</div>
+
+
+<div class="header-text">
+
+<h1>محسن طاهری</h1>
+
+<h2>مهندس عمران - مدیر پروژه و سرناظر</h2>
+
+<p>
+کارشناسی مهندسی عمران - دانشگاه آزاد شاهرود (1377)<br>
+کارشناسی ارشد مهندسی سازه - دانشگاه آزاد ابرکوه (1393)
+</p>
+
+</div>
+
 </header>
 
-<style>
-.header {
-    position: relative;
-    width: 100%;
-    min-height: 220px;
-    direction: rtl;
-}
 
-.header-text {
-    text-align: center;
-    padding-top: 40px;
-}
-
-.header-text h1 {
-    font-size: 36px;
-    margin: 0;
-}
-
-.header-text h2 {
-    font-size: 22px;
-    margin-top: 10px;
-}
-
-.header-text p {
-    font-size: 17px;
-    line-height: 2;
-}
-
-.header-photo {
-    position: absolute;
-    right: 30px;
-    top: 30px;
-}
-
-.header-photo img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-</style>
-
-
-
-
-<div class="container">
-
+    <div class="container">
 
 
 <div class="card">
@@ -193,11 +179,9 @@ font-size:18px;
 <h3>About Me</h3>
 
 <p>
-
 Senior Civil Engineer with more than 25 years of experience in supervision and management of large-scale infrastructure projects including railway, airport, bridge and highway projects.
 
 Experienced in construction supervision, technical office activities, quantity surveying, quality control and project management.
-
 </p>
 
 </div>
@@ -207,7 +191,6 @@ Experienced in construction supervision, technical office activities, quantity s
 <div class="card">
 
 <h3>Professional Experience</h3>
-
 
 <div class="timeline">
 
@@ -290,7 +273,6 @@ Supervision of railway infrastructure works including bridges, culverts, earthwo
 <div class="card">
 
 <h3>Professional Skills</h3>
-
 
 <div class="skills">
 
